@@ -14,6 +14,8 @@ body {
 }
 
 .grid-container {
+    align-items: center;
+    justify-content: center;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
@@ -28,12 +30,12 @@ body {
     width: 100px;
     box-sizing: border-box;
     height: 5rem;
-    padding: 20px;
     text-align: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 500;
     cursor: pointer;
+    user-select: none;
 }
 
 #title-text {
@@ -44,9 +46,12 @@ body {
     margin: 10px;
 }
 
-.display {
+.player-display {
     margin: 10px;
+}
 
+.result-display {
+    margin: 10px;
 }
 
 #reset-btn {
@@ -58,9 +63,7 @@ body {
     cursor: pointer;
 }
 
-.cell:hover {
-    background-color: rgba(58, 55, 55, 0.527);
-}
+
 
 #reset-btn:hover {
     background-color: rgb(35, 185, 93);
